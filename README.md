@@ -4,7 +4,7 @@
         > Change this:
             spring:
                 datasource:
-                #    Change the "YourDatabaseName" to your Schema
+                #    Change the "payroll" to your Schema Name
                     url: jdbc:mysql://localhost:3306/payroll
                 #    Change this to your db username
                     username: root
