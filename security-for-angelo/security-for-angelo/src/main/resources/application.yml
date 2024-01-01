@@ -1,0 +1,19 @@
+spring:
+  datasource:
+#    Change the "YourDatabaseName" to your Schema
+    url: jdbc:mysql://localhost:3306/payroll
+#    Change this to your db username
+    username: root
+#    Change this to your db password
+    password: localhost123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+#      This drops the table if the application is not running
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
